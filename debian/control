@@ -1,0 +1,15 @@
+Source: gldriver-test
+Section: admin
+Priority: optional
+Maintainer: Simon Long <simon@raspberrypi.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: http://raspberrypi.org/
+
+Package: gldriver-test
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Enable/disable fbturbo when OpenGL driver is used
+ Installs a systemd service which creates or deletes the 
+ /usr/share/X11/xorg.conf.d/99-fbturbo.conf file depending
+ on the status of the v3d driver as reported by device tree.
