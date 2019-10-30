@@ -1,3 +1,16 @@
+gldriver-test (0.4) buster; urgency=medium
+
+  * Check for aarch64
+    - https://github.com/raspberrypi/firmware/issues/1278
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 30 Oct 2019 12:01:51 +0000
+
+gldriver-test (0.3) unstable; urgency=medium
+
+  * Silence warnings about non-existant files
+
+ -- Serge Schneider <serge@raspberrypi.org>  Fri, 02 Aug 2019 18:23:23 +0100
+
 gldriver-test (0.2) unstable; urgency=medium
 
   * Check for KMS firmware flag
