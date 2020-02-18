@@ -1,3 +1,9 @@
+gldriver-test (0.5) buster; urgency=medium
+
+  * Add KMS path check
+
+ -- Serge Schneider <serge@raspberrypi.org>  Mon, 17 Feb 2020 12:50:38 +0000
+
 gldriver-test (0.4) buster; urgency=medium
 
   * Check for aarch64
