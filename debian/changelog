@@ -1,3 +1,9 @@
+gldriver-test (0.8) bullseye; urgency=medium
+
+  * Update glamor test to exclude Pi 2 and 3
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 14 Oct 2021 17:24:02 +0100
+
 gldriver-test (0.7) bullseye; urgency=medium
 
   * Add file to disable glamor acceleration on Pi 1 and Zero
