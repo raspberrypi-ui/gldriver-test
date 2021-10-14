@@ -7,7 +7,7 @@ Standards-Version: 3.9.8
 Homepage: http://raspberrypi.org/
 
 Package: gldriver-test
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Enable/disable fbturbo when OpenGL driver is used
  Installs a systemd service which creates or deletes the 

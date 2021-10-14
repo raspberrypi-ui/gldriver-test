@@ -1,8 +1,14 @@
-gldriver-test (0.6) bullseye; urgency=medium
+gldriver-test (0.7) bullseye; urgency=medium
 
   * Add file to disable glamor acceleration on Pi 1 and Zero
 
  -- Simon Long <simon@raspberrypi.com>  Thu, 14 Oct 2021 13:00:53 +0100
+
+gldriver-test (0.6) buster; urgency=medium
+
+  * Change package architecture to 'all'
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 26 Feb 2020 17:02:54 +0000
 
 gldriver-test (0.5) buster; urgency=medium
 
