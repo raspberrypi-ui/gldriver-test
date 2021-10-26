@@ -1,3 +1,9 @@
+gldriver-test (0.10) bullseye; urgency=medium
+
+  * Modify glamor test so glamor is only disabled under KMS / fKMS
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 26 Oct 2021 10:03:34 +0100
+
 gldriver-test (0.9) bullseye; urgency=medium
 
   * Separate out glamor test into separate service
