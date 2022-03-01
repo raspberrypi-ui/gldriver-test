@@ -1,3 +1,9 @@
+gldriver-test (0.11) bullseye; urgency=medium
+
+  * Use standard checks for KMS and hardware in raspi-config
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 01 Mar 2022 11:34:17 +0000
+
 gldriver-test (0.10) bullseye; urgency=medium
 
   * Modify glamor test so glamor is only disabled under KMS / fKMS

@@ -1,9 +1,6 @@
 #!/bin/bash
 
-if grep -s -q okay /proc/device-tree/soc/v3d@7ec00000/status \
-                   /proc/device-tree/soc/firmwarekms@7e600000/status \
-                   /proc/device-tree/v3dbus/v3d@7ec04000/status ||
-   [ "$(arch)" == aarch64 ]; then
+if raspi-config nonint is_kms || [ "$(arch)" == aarch64 ]; then
 	if [ -e /usr/share/X11/xorg.conf.d/99-fbturbo.conf ] ; then
 		rm /usr/share/X11/xorg.conf.d/99-fbturbo.conf
 	fi

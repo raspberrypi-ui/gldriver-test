@@ -8,7 +8,7 @@ Homepage: http://raspberrypi.org/
 
 Package: gldriver-test
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, raspi-config
 Description: Enable/disable fbturbo when OpenGL driver is used
  Installs a systemd service which creates or deletes the 
  /usr/share/X11/xorg.conf.d/99-fbturbo.conf file depending
