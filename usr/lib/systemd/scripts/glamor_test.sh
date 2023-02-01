@@ -8,7 +8,7 @@ if ! raspi-config nonint is_pifour && raspi-config nonint is_kms ; then
 Section "Device"
 	Identifier "kms"
 	Driver "modesetting"
-	Option "AccelMethod" "none"
+	Option "AccelMethod" "msdri3"
 EndSection
 EOF
 	fi
