@@ -1,3 +1,9 @@
+gldriver-test (0.12) bullseye; urgency=medium
+
+  * Add support for msdri3
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 06 Feb 2023 15:26:37 +0000
+
 gldriver-test (0.11) bullseye; urgency=medium
 
   * Use standard checks for KMS and hardware in raspi-config
