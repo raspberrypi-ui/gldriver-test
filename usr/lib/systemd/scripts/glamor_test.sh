@@ -9,6 +9,7 @@ Section "Device"
 	Identifier "kms"
 	Driver "modesetting"
 	Option "AccelMethod" "msdri3"
+	Option "UseGammaLUT" "off"
 EndSection
 EOF
 	fi

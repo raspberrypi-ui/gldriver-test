@@ -1,3 +1,9 @@
+gldriver-test (0.13) bookworm; urgency=medium
+
+  * Disable gamma look-up table for Bookworm compatibility
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 18 May 2023 13:25:11 +0100
+
 gldriver-test (0.12) bullseye; urgency=medium
 
   * Add support for msdri3
