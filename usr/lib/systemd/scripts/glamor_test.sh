@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Glamor should run unless the platform is not Pi 4 and the legacy driver is not in use.
+# Glamor should not run on platforms prior to Pi 4.
 
-if ! raspi-config nonint is_pifour ; then
+if ! raspi-config nonint gpu_has_mmu ; then
 	if ! [ -e /usr/share/X11/xorg.conf.d/20-noglamor.conf ] ; then
 		cat > /usr/share/X11/xorg.conf.d/20-noglamor.conf << EOF
 Section "Device"
