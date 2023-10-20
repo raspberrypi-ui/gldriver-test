@@ -26,3 +26,4 @@
 override_dh_installsystemd:
 	dh_installsystemd --name=gldriver-test
 	dh_installsystemd --name=glamor-test
+	dh_installsystemd --name=rp1-test
