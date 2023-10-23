@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+case "${1}" in
+  configure)
+    if [ -e /usr/share/X11/xorg.conf.d/99-fbturbo.conf ] ; then
+	    rm /usr/share/X11/xorg.conf.d/99-fbturbo.conf
+    fi
+    ;;
+
+  abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+  *)
+    echo "postinst called with unknown argument \`${1}'" >&2
+    exit 1
+    ;;
+esac
+
+#DEBHELPER#
