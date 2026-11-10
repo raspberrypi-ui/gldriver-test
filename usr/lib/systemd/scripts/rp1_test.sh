@@ -7,7 +7,7 @@
 IDENTIFIER=vc4
 MATCHDRIVER=vc4
 
-if raspi-config nonint is_pifive; then
+if rcn nonint get_matching_pis X5 > /dev/null; then
   if ls /dev/dri/by-path/ | grep -q '\(vec\|dsi\|dpi\)-card' ; then
     IDENTIFIER=rp1
     MATCHDRIVER='rp1-vec|rp1-dsi|rp1-dpi'

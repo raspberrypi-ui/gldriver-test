@@ -8,7 +8,7 @@ Homepage: http://raspberrypi.org/
 
 Package: gldriver-test
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, raspi-config (>= 20220301)
+Depends: ${shlibs:Depends}, ${misc:Depends}, rcn
 Description: Various graphics-related config services
  Installs systemd services to manage various aspects of configuration
  of video drivers on Raspberry Pi.

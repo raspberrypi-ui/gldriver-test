@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Glamor should not run on platforms prior to Pi 4.
-
-if ! raspi-config nonint gpu_has_mmu ; then
+PIGEN=$(rcn nonint get_pi_gen)
+if [ "$PIGEN" -ne 4 ] && [ "$PIGEN" -ne 5 ]; then
 	if ! [ -e /usr/share/X11/xorg.conf.d/20-noglamor.conf ] ; then
 		cat > /usr/share/X11/xorg.conf.d/20-noglamor.conf << EOF
 Section "Device"
