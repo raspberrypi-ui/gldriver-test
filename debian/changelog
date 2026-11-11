@@ -1,3 +1,9 @@
+gldriver-test (0.16) trixie; urgency=medium
+
+  * Modify for rcn
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 11 Nov 2026 13:22:21 +0000
+
 gldriver-test (0.15) bookworm; urgency=medium
 
   * Add RP1 display test service; remove gldriver-test
